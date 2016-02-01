@@ -40,30 +40,26 @@
 module lvds_altlvds17_tx (
 	tx_in,
 	tx_inclock,
-	tx_out,
-	tx_outclock);
+	tx_out);
 
 	input	[67:0]  tx_in;
 	input	  tx_inclock;
 	output	[16:0]  tx_out;
-	output	  tx_outclock;
 
 	wire [16:0] sub_wire0;
-	wire  sub_wire1;
 	wire [16:0] tx_out = sub_wire0[16:0];
-	wire  tx_outclock = sub_wire1;
 
 	altlvds_tx	ALTLVDS_TX_component (
 				.tx_in (tx_in),
 				.tx_inclock (tx_inclock),
 				.tx_out (sub_wire0),
-				.tx_outclock (sub_wire1),
 				.pll_areset (1'b0),
 				.sync_inclock (1'b0),
 				.tx_coreclock (),
 				.tx_data_reset (1'b0),
 				.tx_enable (1'b1),
 				.tx_locked (),
+				.tx_outclock (),
 				.tx_pll_enable (1'b1),
 				.tx_syncclock (1'b0));
 	defparam
@@ -123,7 +119,7 @@ endmodule
 // Retrieval info: PRIVATE: CNX_REG_INOUT NUMERIC "1"
 // Retrieval info: PRIVATE: CNX_TX_CORECLOCK STRING "OFF"
 // Retrieval info: PRIVATE: CNX_TX_LOCKED STRING "OFF"
-// Retrieval info: PRIVATE: CNX_TX_OUTCLOCK STRING "ON"
+// Retrieval info: PRIVATE: CNX_TX_OUTCLOCK STRING "OFF"
 // Retrieval info: PRIVATE: CNX_USE_CLOCK_RESC STRING "Dual-Regional clock"
 // Retrieval info: PRIVATE: CNX_USE_PLL_ENABLE NUMERIC "0"
 // Retrieval info: PRIVATE: CNX_USE_TX_OUT_PHASE NUMERIC "1"
@@ -170,8 +166,6 @@ endmodule
 // Retrieval info: CONNECT: @tx_inclock 0 0 0 0 tx_inclock 0 0 0 0
 // Retrieval info: USED_PORT: tx_out 0 0 17 0 OUTPUT NODEFVAL "tx_out[16..0]"
 // Retrieval info: CONNECT: tx_out 0 0 17 0 @tx_out 0 0 17 0
-// Retrieval info: USED_PORT: tx_outclock 0 0 0 0 OUTPUT NODEFVAL "tx_outclock"
-// Retrieval info: CONNECT: tx_outclock 0 0 0 0 @tx_outclock 0 0 0 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL lvds_altlvds17_tx.v TRUE FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL lvds_altlvds17_tx.qip TRUE FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL lvds_altlvds17_tx.bsf FALSE TRUE

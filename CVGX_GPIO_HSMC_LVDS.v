@@ -177,7 +177,7 @@ output 		    [16:0]		HSMC_TX_P;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
+wire [67:0] loopback;
 
 
 
@@ -185,16 +185,15 @@ output 		    [16:0]		HSMC_TX_P;
 //  Structural coding
 //=======================================================
 lvds_altlvds17_tx	lvds_altlvds17_tx_inst (
-	.tx_in ( 68'b0 ),
-	.tx_inclock ( CLOCK_50_B5B ),
+	.tx_in ( loopback ),
+	.tx_inclock ( HSMC_CLKIN_P[1] ),
 	.tx_out ( HSMC_TX_P ),
-	.tx_outclock ( HSMC_CLKOUT_P[1] )
 	);
 
 lvds_altlvds17_rx	lvds_altlvds17_rx_inst (
 	.rx_in ( HSMC_RX_P ),
-	.rx_inclock ( CLOCK_50_B5B ),
-	.rx_out (  ),
+	.rx_inclock ( HSMC_CLKIN_P[2] ),
+	.rx_out ( loopback ),
 	.rx_outclock ( HSMC_CLKOUT_P[2] )
 	);
 
