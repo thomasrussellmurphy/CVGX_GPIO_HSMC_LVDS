@@ -78,6 +78,74 @@
 		</pin>
 		<pin name="HSMC_TX_P[0]" direction="Output" source="Hierarchy Database" >
 		</pin>
+		<pin name="HSMC_TX_N[0]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[0]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[1]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[1]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[2]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[2]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[3]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[3]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[4]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[4]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[5]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[5]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[6]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[6]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[7]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[7]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[8]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[8]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[9]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[9]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[10]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[10]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[11]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[11]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[12]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[12]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[13]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[13]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[14]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[14]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[15]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[15]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_TX_N[16]" source="Assignments" >
+		</pin>
+		<pin name="HSMC_RX_N[16]" source="Assignments" >
+		</pin>
 	</pin_info>
 	<buses>
 	</buses>

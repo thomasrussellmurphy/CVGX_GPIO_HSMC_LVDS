@@ -75,16 +75,12 @@ module CVGX_GPIO_HSMC_LVDS(
 	GPIO,
 
 	//////////// HSMC, HSMC connect to HSMC Default //////////
-	HSMC_CLKIN_N,
 	HSMC_CLKIN_P,
 	HSMC_CLKIN0,
-	HSMC_CLKOUT_N,
 	HSMC_CLKOUT_P,
 	HSMC_CLKOUT0,
 	HSMC_D,
-	HSMC_RX_N,
 	HSMC_RX_P,
-	HSMC_TX_N,
 	HSMC_TX_P
 );
 
@@ -167,16 +163,14 @@ output		          		SRAM_WE_n;
 inout 		    [35:0]		GPIO;
 
 //////////// HSMC, HSMC connect to HSMC Default //////////
-input 		     [2:1]		HSMC_CLKIN_N;
-input 		     [2:1]		HSMC_CLKIN_P;
 input 		          		HSMC_CLKIN0;
-output		     [2:1]		HSMC_CLKOUT_N;
-output		     [2:1]		HSMC_CLKOUT_P;
 output		          		HSMC_CLKOUT0;
 inout 		     [3:0]		HSMC_D;
-input 		    [16:0]		HSMC_RX_N;
+
+// LVDS Differential Pair Signals
+input 		     [2:1]		HSMC_CLKIN_P;
+output		     [2:1]		HSMC_CLKOUT_P;
 input 		    [16:0]		HSMC_RX_P;
-output 		    [16:0]		HSMC_TX_N;
 output 		    [16:0]		HSMC_TX_P;
 
 
@@ -194,14 +188,14 @@ lvds_altlvds17_tx	lvds_altlvds17_tx_inst (
 	.tx_in ( 68'b0 ),
 	.tx_inclock ( CLOCK_50_B5B ),
 	.tx_out ( HSMC_TX_P ),
-	.tx_outclock (  )
+	.tx_outclock ( HSMC_CLKOUT_P[1] )
 	);
 
 lvds_altlvds17_rx	lvds_altlvds17_rx_inst (
 	.rx_in ( HSMC_RX_P ),
 	.rx_inclock ( CLOCK_50_B5B ),
 	.rx_out (  ),
-	.rx_outclock (  )
+	.rx_outclock ( HSMC_CLKOUT_P[2] )
 	);
 
 endmodule

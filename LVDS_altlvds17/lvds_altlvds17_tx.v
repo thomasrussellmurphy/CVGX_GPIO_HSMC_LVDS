@@ -68,7 +68,7 @@ module lvds_altlvds17_tx (
 				.tx_syncclock (1'b0));
 	defparam
 		ALTLVDS_TX_component.center_align_msb = "UNUSED",
-		ALTLVDS_TX_component.common_rx_tx_pll = "OFF",
+		ALTLVDS_TX_component.common_rx_tx_pll = "ON",
 		ALTLVDS_TX_component.coreclock_divide_by = 1,
 		ALTLVDS_TX_component.data_rate = "800.0 Mbps",
 		ALTLVDS_TX_component.deserialization_factor = 4,
@@ -110,7 +110,7 @@ endmodule
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: PRIVATE: CNX_CLOCK_CHOICES STRING "tx_coreclock"
 // Retrieval info: PRIVATE: CNX_CLOCK_MODE NUMERIC "0"
-// Retrieval info: PRIVATE: CNX_COMMON_PLL NUMERIC "0"
+// Retrieval info: PRIVATE: CNX_COMMON_PLL NUMERIC "1"
 // Retrieval info: PRIVATE: CNX_DATA_RATE STRING "800.0"
 // Retrieval info: PRIVATE: CNX_DESER_FACTOR NUMERIC "4"
 // Retrieval info: PRIVATE: CNX_EXT_PLL STRING "OFF"
@@ -132,7 +132,7 @@ endmodule
 // Retrieval info: PRIVATE: pINCLOCK_PHASE_SHIFT STRING "0.00"
 // Retrieval info: PRIVATE: pOUTCLOCK_PHASE_SHIFT STRING "0.00"
 // Retrieval info: CONSTANT: CENTER_ALIGN_MSB STRING "UNUSED"
-// Retrieval info: CONSTANT: COMMON_RX_TX_PLL STRING "OFF"
+// Retrieval info: CONSTANT: COMMON_RX_TX_PLL STRING "ON"
 // Retrieval info: CONSTANT: CORECLOCK_DIVIDE_BY NUMERIC "1"
 // Retrieval info: CONSTANT: clk_src_is_pll STRING "off"
 // Retrieval info: CONSTANT: DATA_RATE STRING "800.0 Mbps"

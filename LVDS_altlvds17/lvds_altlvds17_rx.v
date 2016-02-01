@@ -91,7 +91,7 @@ module lvds_altlvds17_rx (
 	defparam
 		ALTLVDS_RX_component.buffer_implementation = "RAM",
 		ALTLVDS_RX_component.cds_mode = "UNUSED",
-		ALTLVDS_RX_component.common_rx_tx_pll = "OFF",
+		ALTLVDS_RX_component.common_rx_tx_pll = "ON",
 		ALTLVDS_RX_component.data_align_rollover = 4,
 		ALTLVDS_RX_component.data_rate = "800.0 Mbps",
 		ALTLVDS_RX_component.deserialization_factor = 4,
@@ -167,7 +167,7 @@ endmodule
 // Retrieval info: PRIVATE: Reg_InOut NUMERIC "1"
 // Retrieval info: PRIVATE: Use_Cda_Reset NUMERIC "0"
 // Retrieval info: PRIVATE: Use_Clock_Resc STRING "Dual-Regional clock"
-// Retrieval info: PRIVATE: Use_Common_Rx_Tx_Plls NUMERIC "0"
+// Retrieval info: PRIVATE: Use_Common_Rx_Tx_Plls NUMERIC "1"
 // Retrieval info: PRIVATE: Use_Data_Align NUMERIC "0"
 // Retrieval info: PRIVATE: Use_Lock NUMERIC "0"
 // Retrieval info: PRIVATE: Use_Pll_Areset NUMERIC "0"
@@ -175,7 +175,7 @@ endmodule
 // Retrieval info: PRIVATE: Use_Tx_Out_Phase NUMERIC "0"
 // Retrieval info: CONSTANT: BUFFER_IMPLEMENTATION STRING "RAM"
 // Retrieval info: CONSTANT: CDS_MODE STRING "UNUSED"
-// Retrieval info: CONSTANT: COMMON_RX_TX_PLL STRING "OFF"
+// Retrieval info: CONSTANT: COMMON_RX_TX_PLL STRING "ON"
 // Retrieval info: CONSTANT: clk_src_is_pll STRING "off"
 // Retrieval info: CONSTANT: DATA_ALIGN_ROLLOVER NUMERIC "4"
 // Retrieval info: CONSTANT: DATA_RATE STRING "800.0 Mbps"
