@@ -190,7 +190,17 @@ inout 		    [16:0]		HSMC_TX_P;
 //=======================================================
 //  Structural coding
 //=======================================================
+lvds_altiobuf17_o	lvds_altiobuf17_o_inst (
+	.datain ( 17'b0 ),
+	.dataout ( HSMC_TX_P ),
+	.dataout_b ( HSMC_TX_N )
+	);
 
+lvds_altiobuf17_i	lvds_altiobuf17_i_inst (
+	.datain ( HSMC_RX_P ),
+	.datain_b ( HSMC_RX_N ),
+	.dataout (  )
+	);
 
 
 endmodule
