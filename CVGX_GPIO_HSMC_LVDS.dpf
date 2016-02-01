@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="HSMC_CLKIN_P[2]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_CLKIN_P[1]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_CLKOUT_P[2]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_CLKOUT_P[1]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[16]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[15]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[14]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[13]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[12]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[11]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[10]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[9]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[8]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[7]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[6]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[5]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[4]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[3]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[2]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[1]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_RX_P[0]" direction="Input" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[16]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[15]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[14]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[13]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[12]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[11]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[10]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[9]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[8]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[7]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[6]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[5]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[4]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[3]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[2]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[1]" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="HSMC_TX_P[0]" direction="Output" source="Hierarchy Database" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

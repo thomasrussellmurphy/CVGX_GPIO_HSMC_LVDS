@@ -174,10 +174,10 @@ output		     [2:1]		HSMC_CLKOUT_N;
 output		     [2:1]		HSMC_CLKOUT_P;
 output		          		HSMC_CLKOUT0;
 inout 		     [3:0]		HSMC_D;
-inout 		    [16:0]		HSMC_RX_N;
-inout 		    [16:0]		HSMC_RX_P;
-inout 		    [16:0]		HSMC_TX_N;
-inout 		    [16:0]		HSMC_TX_P;
+input 		    [16:0]		HSMC_RX_N;
+input 		    [16:0]		HSMC_RX_P;
+output 		    [16:0]		HSMC_TX_N;
+output 		    [16:0]		HSMC_TX_P;
 
 
 //=======================================================
@@ -190,17 +190,18 @@ inout 		    [16:0]		HSMC_TX_P;
 //=======================================================
 //  Structural coding
 //=======================================================
-lvds_altiobuf17_o	lvds_altiobuf17_o_inst (
-	.datain ( 17'b0 ),
-	.dataout ( HSMC_TX_P ),
-	.dataout_b ( HSMC_TX_N )
+lvds_altlvds17_tx	lvds_altlvds17_tx_inst (
+	.tx_in ( 68'b0 ),
+	.tx_inclock ( CLOCK_50_B5B ),
+	.tx_out ( HSMC_TX_P ),
+	.tx_outclock (  )
 	);
 
-lvds_altiobuf17_i	lvds_altiobuf17_i_inst (
-	.datain ( HSMC_RX_P ),
-	.datain_b ( HSMC_RX_N ),
-	.dataout (  )
+lvds_altlvds17_rx	lvds_altlvds17_rx_inst (
+	.rx_in ( HSMC_RX_P ),
+	.rx_inclock ( CLOCK_50_B5B ),
+	.rx_out (  ),
+	.rx_outclock (  )
 	);
-
 
 endmodule
